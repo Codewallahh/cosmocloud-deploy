@@ -28,10 +28,14 @@ cosmocloud-deploy/
 
 ## Instructions to Deploy
 
-(i)  Create a Kubernetes Namespace```
-(ii) Create the Helm Chart``
+(i)  Create a Kubernetes Namespace
+
+
+(ii) Create the Helm Chart
     `helm create cosmocloud-deploy
      cd cosmocloud-deploy`
+
+     
 (iii) Define Deployments
     `edit templates/deployment.yaml to create separate Deployment`
 (iv)  Define Services
