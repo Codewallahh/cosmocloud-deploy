@@ -14,16 +14,16 @@
 The chart directory `cosmocloud-deploy` contains the following files:
 
 
+```plaintext
 cosmocloud-deploy/
 ├── Chart.yaml          # Metadata about the chart
-├── values.yaml         # Default values for templates
+├── values.yaml         # Default values for configurable parameters
 ├── templates/          # Kubernetes manifest templates
-│   ├── deployment.yaml # Deployment templates for backend, frontend, Redis
-│   ├── service.yaml    # Service templates for backend, frontend, Redis
-│   ├── .helmignore
+│   ├── deployment.yaml # Deployment templates for backend, frontend, and Redis
+│   ├── service.yaml    # Service definitions for backend, frontend, and Redis
+│   ├── _helpers.tpl    # Helper functions for labels and naming conventions
+```
 
-
----
 
 
 ## Instructions to Deploy
