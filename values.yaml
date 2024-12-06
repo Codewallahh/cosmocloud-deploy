@@ -1,0 +1,29 @@
+backend:
+  image: "shreybatra/sample-backend"
+  replicas: 1
+  env:
+    REDIS_URI: "redis://redis-svc:6379"
+  service:
+    name: "backend-svc"
+    port: 8000
+    type: ClusterIP
+
+frontend:
+  image: "shreybatra/sample-frontend"
+  replicas: 1
+  env:
+    BACKEND_URL: "http://backend-svc:8000"
+  service:
+    name: "frontend-svc"
+    port: 5173
+    nodePort: 31000
+    type: NodePort
+
+redis:
+  image: "redis"
+  replicas: 1
+  service:
+    name: "redis-svc"
+    port: 6379
+    type: ClusterIP
+
