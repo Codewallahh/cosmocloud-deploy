@@ -13,7 +13,7 @@
 
 The chart directory `cosmocloud-deploy` contains the following files:
 
-```plaintext
+
 cosmocloud-deploy/
 ├── Chart.yaml          # Metadata about the chart
 ├── values.yaml         # Default values for templates
@@ -21,6 +21,30 @@ cosmocloud-deploy/
 │   ├── deployment.yaml # Deployment templates for backend, frontend, Redis
 │   ├── service.yaml    # Service templates for backend, frontend, Redis
 │   ├── .helmignore
+
+
+---
+
+
+## Instructions to Deploy
+
+(i)  Create a Kubernetes Namespace
+(ii) Create the Helm Chart
+    `helm create cosmocloud-deploy
+     cd cosmocloud-deploy`
+(iii) Define Deployments
+    `edit templates/deployment.yaml to create separate Deployment`
+(iv)  Define Services
+      `edit templates/service.yaml to create separate Service`
+(v) Update values.yaml
+         
+      
+
+
+
+
+
+
 
 
 
