@@ -38,8 +38,12 @@ cosmocloud-deploy/
      
 (iii) Define Deployments
     `edit templates/deployment.yaml to create separate Deployment`
+
+    
 (iv)  Define Services
       `edit templates/service.yaml to create separate Service`
+
+      
 (v) Update values.yaml
          
       
