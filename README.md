@@ -21,7 +21,9 @@ cosmocloud-deploy/
 ├── templates/          # Kubernetes manifest templates
 │   ├── deployment.yaml # Deployment templates for backend, frontend, and Redis
 │   ├── service.yaml    # Service definitions for backend, frontend, and Redis
-│   ├── _helpers.tpl    # Helper functions for labels and naming conventions
+│   ├── .helmignore
+
+
 ```
 
 
